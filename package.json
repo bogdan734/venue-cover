@@ -1,0 +1,33 @@
+{
+  "name": "venue-cover",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "workspaces": [
+    "apps/*"
+  ],
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "lint": "biome check --error-on-warnings .",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm test --workspaces --if-present",
+    "db:up": "docker compose up -d --wait db",
+    "demo": "npm run --silent db:up && npm run demo -w apps/web",
+    "e2e": "npm run e2e -w apps/web",
+    "public": "scripts/public",
+    "bot:avatar": "node --import tsx scripts/bot-avatar.ts",
+    "eval": "node --import tsx evals/cli.ts",
+    "eval:smoke": "node --import tsx evals/cli.ts --provider fake --check",
+    "eval:calibrate": "node --import tsx evals/calibrate.ts",
+    "eval:privacy": "node --import tsx evals/privacy.ts"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.6.7",
+    "typescript": "^7.0.2"
+  },
+  "overrides": {
+    "graphql": "16.15.0"
+  }
+}

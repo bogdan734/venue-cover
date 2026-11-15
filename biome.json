@@ -1,0 +1,43 @@
+{
+  "files": {
+    "includes": [
+      "**",
+      "!**/node_modules",
+      "!**/dist",
+      "!**/.next",
+      "!**/coverage",
+      "!.cache",
+      "!docs/private",
+      "!inputs",
+      "!**/*.md",
+      "!**/next-env.d.ts",
+      "!**/e2e/.results",
+      "!**/.next-e2e",
+      "!apps/web/tsconfig.json",
+      "!**/.next-build",
+      "!**/e2e/.auth",
+      "!**/.*/*.json"
+    ]
+  },
+  "formatter": {
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 100
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single"
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "preset": "recommended"
+    }
+  },
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
+    }
+  }
+}

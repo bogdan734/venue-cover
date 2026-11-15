@@ -1,0 +1,19 @@
+#!/bin/sh
+# Full gate: red means not done.
+# Keep it under ~2 minutes and quiet on success (CHECK_TIMEOUT raises the limit).
+set -eu
+cd "$(dirname "$0")/.."
+
+# Node 22.11 cannot require() ES-only packages (used by fastify's test helper); 22.12+ can.
+node -e 'const [a, b] = process.versions.node.split(".").map(Number); process.exit(a > 22 || (a === 22 && b >= 12) ? 0 : 1)' ||
+  export NODE_OPTIONS="${NODE_OPTIONS:-} --experimental-require-module --no-warnings"
+
+# The tests need the compose database; CI provides its own service.
+[ -n "${CI:-}" ] || npm run --silent db:up
+
+npm run --if-present lint
+npm run --if-present typecheck
+npm test --if-present
+
+# The web app end to end against the real API, in the installed Chrome (PW_CHANNEL=chromium uses Playwright's own).
+npm run --silent e2e

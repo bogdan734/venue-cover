@@ -1,0 +1,148 @@
+# The same capabilities as the REST API, for clients that want to ask for exactly the fields they need.
+# Mutations that create or change business records need an Idempotency-Key header; each mutation field uses it with its
+# own response key (alias or name) appended, so one request can safely carry more than one.
+
+scalar JSON
+
+enum RiskClass {
+  A
+  B
+  C
+  X
+}
+
+type Premium {
+  netCents: Int!
+  commissionCents: Int!
+  marginCents: Int!
+  feeCents: Int!
+  taxCents: Int!
+  totalCents: Int!
+  rateRowId: String!
+}
+
+type Contact {
+  name: String!
+  email: String!
+}
+
+type Activity {
+  id: ID!
+  title: String!
+  riskClass: RiskClass!
+  productCode: String!
+}
+
+type ActivityMatch {
+  activityId: ID!
+  title: String!
+  riskClass: RiskClass!
+  score: Float!
+}
+
+type Program {
+  id: ID!
+  code: String!
+  name: String!
+  province: String!
+  rules: JSON!
+}
+
+type Quote {
+  id: ID!
+  state: String!
+  holder: Contact!
+  input: JSON!
+  premium: Premium
+  referralReasons: [String!]!
+  createdAt: String!
+  expiresAt: String!
+  program: Program!
+  activity: Activity!
+  policy: Policy
+  referral: Referral
+}
+
+type Policy {
+  id: ID!
+  policyNumber: String!
+  startsAt: String!
+  endsAt: String!
+  totalCents: Int!
+  issuedAt: String!
+  program: Program!
+  quote: Quote!
+}
+
+type Referral {
+  id: ID!
+  state: String!
+  reasons: [String!]!
+  claimedBy: String
+  dueAt: String!
+  sla: String
+  decision: JSON
+  activity: Activity!
+  quote: Quote!
+}
+
+type Decision {
+  outcome: String!
+  reasons: [String!]!
+}
+
+type Classification {
+  id: ID!
+  riskClass: RiskClass
+  confidence: Float!
+  degraded: Boolean!
+  facts: JSON!
+  phrases: JSON!
+  primary: ActivityMatch
+  decision: Decision!
+}
+
+type BindResult {
+  policyId: ID!
+  policyNumber: String!
+}
+
+input QuoteInput {
+  activityId: ID!
+  classificationId: ID
+  venueId: ID
+  participants: Int!
+  hours: Float!
+  alcohol: String!
+  eventDate: String!
+  startTime: String!
+  limitCents: Int!
+  holderName: String!
+  holderEmail: String!
+  bookingRef: String
+  answers: JSON
+}
+
+input DecisionInput {
+  action: String!
+  riskClass: RiskClass
+  activityId: ID
+  note: String!
+  lines: JSON
+}
+
+type Query {
+  quote(id: ID!): Quote
+  policy(id: ID!): Policy
+  referrals(state: String): [Referral!]!
+  activities(q: String!): [ActivityMatch!]!
+  program(id: ID!): Program
+}
+
+type Mutation {
+  classifyEvent(text: String!): Classification!
+  createQuote(input: QuoteInput!): Quote!
+  bindQuote(id: ID!, paymentToken: String!): BindResult!
+  claimReferral(id: ID!): Referral!
+  decideReferral(id: ID!, decision: DecisionInput!): Referral!
+}

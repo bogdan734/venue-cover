@@ -1,0 +1,7 @@
+.next/
+.next-e2e/
+.next-build/
+e2e/.results/
+next-env.d.ts
+*.tsbuildinfo
+e2e/.auth/

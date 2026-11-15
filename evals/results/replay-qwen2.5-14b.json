@@ -1,0 +1,311 @@
+{
+  "label": "replay-qwen2.5-14b",
+  "date": "2026-11-14",
+  "summary": {
+    "n": 261,
+    "top1": {
+      "value": 0.8313253012048193,
+      "low": 0.7798600410423302,
+      "high": 0.8727224453839542,
+      "successes": 207,
+      "n": 249
+    },
+    "classAccuracy": {
+      "value": 0.8659003831417624,
+      "low": 0.8192108122735935,
+      "high": 0.9019749833113901,
+      "successes": 226,
+      "n": 261
+    },
+    "outcomeAccuracy": {
+      "value": 0.7241379310344828,
+      "low": 0.6669592468879708,
+      "high": 0.7748142509311029,
+      "successes": 189,
+      "n": 261
+    },
+    "referralRecall": {
+      "value": 1,
+      "low": 0.9633580563440465,
+      "high": 0.9999999999999998,
+      "successes": 101,
+      "n": 101
+    },
+    "referralPrecision": {
+      "value": 0.5838150289017341,
+      "low": 0.5093199535035847,
+      "high": 0.6546686102732641,
+      "successes": 101,
+      "n": 173
+    },
+    "automaticRate": {
+      "value": 0.3371647509578544,
+      "low": 0.2825417626364604,
+      "high": 0.39651167911891333,
+      "successes": 88,
+      "n": 261
+    },
+    "unsafeAutomation": 0,
+    "latencyMs": {
+      "p50": 2.0254999999999654,
+      "p95": 3.3511250000000246
+    },
+    "byTag": {
+      "plain": {
+        "n": 77,
+        "top1": {
+          "value": 0.8961038961038961,
+          "low": 0.8081542906371879,
+          "high": 0.9464077170420269,
+          "successes": 69,
+          "n": 77
+        },
+        "outcomeAccuracy": {
+          "value": 0.6363636363636364,
+          "low": 0.5248199544762014,
+          "high": 0.7349472940691019,
+          "successes": 49,
+          "n": 77
+        }
+      },
+      "paraphrase": {
+        "n": 12,
+        "top1": {
+          "value": 0.6666666666666666,
+          "low": 0.3906175873976139,
+          "high": 0.8618821601026385,
+          "successes": 8,
+          "n": 12
+        },
+        "outcomeAccuracy": {
+          "value": 0.25,
+          "low": 0.08894003962896138,
+          "high": 0.53231033912066,
+          "successes": 3,
+          "n": 12
+        }
+      },
+      "risky": {
+        "n": 53,
+        "top1": {
+          "value": 0.8490566037735849,
+          "low": 0.7294549545634046,
+          "high": 0.9214767574221834,
+          "successes": 45,
+          "n": 53
+        },
+        "outcomeAccuracy": {
+          "value": 1,
+          "low": 0.9324156955469234,
+          "high": 1,
+          "successes": 53,
+          "n": 53
+        }
+      },
+      "excluded": {
+        "n": 11,
+        "top1": {
+          "value": 0.9090909090909091,
+          "low": 0.6226353745137962,
+          "high": 0.9837682477371741,
+          "successes": 10,
+          "n": 11
+        },
+        "outcomeAccuracy": {
+          "value": 1,
+          "low": 0.7411599827511859,
+          "high": 1,
+          "successes": 11,
+          "n": 11
+        }
+      },
+      "multi": {
+        "n": 10,
+        "top1": {
+          "value": 0.8,
+          "low": 0.49015684672072335,
+          "high": 0.9433190520193067,
+          "successes": 8,
+          "n": 10
+        },
+        "outcomeAccuracy": {
+          "value": 0.9,
+          "low": 0.5958436145024278,
+          "high": 0.9821242504842788,
+          "successes": 9,
+          "n": 10
+        }
+      },
+      "unknown": {
+        "n": 12,
+        "top1": {
+          "value": null,
+          "low": 0,
+          "high": 1,
+          "successes": 0,
+          "n": 0
+        },
+        "outcomeAccuracy": {
+          "value": 1,
+          "low": 0.7574992425007574,
+          "high": 1,
+          "successes": 12,
+          "n": 12
+        }
+      },
+      "missing": {
+        "n": 10,
+        "top1": {
+          "value": 1,
+          "low": 0.7224598312333834,
+          "high": 1,
+          "successes": 10,
+          "n": 10
+        },
+        "outcomeAccuracy": {
+          "value": 1,
+          "low": 0.7224598312333834,
+          "high": 1,
+          "successes": 10,
+          "n": 10
+        }
+      },
+      "large": {
+        "n": 8,
+        "top1": {
+          "value": 1,
+          "low": 0.6755843804891231,
+          "high": 1,
+          "successes": 8,
+          "n": 8
+        },
+        "outcomeAccuracy": {
+          "value": 1,
+          "low": 0.6755843804891231,
+          "high": 1,
+          "successes": 8,
+          "n": 8
+        }
+      },
+      "french": {
+        "n": 21,
+        "top1": {
+          "value": 0.3333333333333333,
+          "low": 0.17194536432683688,
+          "high": 0.5462692434278971,
+          "successes": 7,
+          "n": 21
+        },
+        "outcomeAccuracy": {
+          "value": 0.19047619047619047,
+          "low": 0.07667440615177301,
+          "high": 0.40000986539273287,
+          "successes": 4,
+          "n": 21
+        }
+      },
+      "typo": {
+        "n": 50,
+        "top1": {
+          "value": 0.86,
+          "low": 0.738135428014719,
+          "high": 0.9304925473797714,
+          "successes": 43,
+          "n": 50
+        },
+        "outcomeAccuracy": {
+          "value": 0.66,
+          "low": 0.5215356854148285,
+          "high": 0.7756323036493895,
+          "successes": 33,
+          "n": 50
+        }
+      },
+      "injection": {
+        "n": 20,
+        "top1": {
+          "value": 0.7,
+          "low": 0.4810232237710206,
+          "high": 0.854524726031006,
+          "successes": 14,
+          "n": 20
+        },
+        "outcomeAccuracy": {
+          "value": 1,
+          "low": 0.8388698745050667,
+          "high": 1,
+          "successes": 20,
+          "n": 20
+        }
+      },
+      "personal": {
+        "n": 2,
+        "top1": {
+          "value": 0.5,
+          "low": 0.09452865480086614,
+          "high": 0.9054713451991339,
+          "successes": 1,
+          "n": 2
+        },
+        "outcomeAccuracy": {
+          "value": 0.5,
+          "low": 0.09452865480086614,
+          "high": 0.9054713451991339,
+          "successes": 1,
+          "n": 2
+        }
+      }
+    }
+  },
+  "sweep": [
+    {
+      "autoConfidenceMin": 0.4,
+      "automaticRate": 0.5210727969348659,
+      "unsafeAutomation": 3,
+      "outcomeAccuracy": 0.8850574712643678,
+      "referralPrecision": 0.784
+    },
+    {
+      "autoConfidenceMin": 0.5,
+      "automaticRate": 0.4904214559386973,
+      "unsafeAutomation": 2,
+      "outcomeAccuracy": 0.8620689655172413,
+      "referralPrecision": 0.7443609022556391
+    },
+    {
+      "autoConfidenceMin": 0.6,
+      "automaticRate": 0.4674329501915709,
+      "unsafeAutomation": 1,
+      "outcomeAccuracy": 0.8467432950191571,
+      "referralPrecision": 0.7194244604316546
+    },
+    {
+      "autoConfidenceMin": 0.7,
+      "automaticRate": 0.3793103448275862,
+      "unsafeAutomation": 0,
+      "outcomeAccuracy": 0.7662835249042146,
+      "referralPrecision": 0.6234567901234568
+    },
+    {
+      "autoConfidenceMin": 0.8,
+      "automaticRate": 0.3371647509578544,
+      "unsafeAutomation": 0,
+      "outcomeAccuracy": 0.7241379310344828,
+      "referralPrecision": 0.5838150289017341
+    },
+    {
+      "autoConfidenceMin": 0.85,
+      "automaticRate": 0.2835249042145594,
+      "unsafeAutomation": 0,
+      "outcomeAccuracy": 0.6704980842911877,
+      "referralPrecision": 0.5401069518716578
+    },
+    {
+      "autoConfidenceMin": 0.9,
+      "automaticRate": 0.19157088122605365,
+      "unsafeAutomation": 0,
+      "outcomeAccuracy": 0.578544061302682,
+      "referralPrecision": 0.4786729857819905
+    }
+  ]
+}

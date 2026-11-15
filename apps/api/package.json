@@ -1,0 +1,30 @@
+{
+  "name": "@venue-cover/api",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file=../../.env --import tsx src/main.ts",
+    "typecheck": "tsc --noEmit -p .",
+    "test": "vitest run",
+    "seed": "node --env-file=../../.env --import tsx src/scripts/seed.ts",
+    "key": "node --env-file=../../.env --import tsx src/scripts/key.ts"
+  },
+  "dependencies": {
+    "@fastify/multipart": "^10.1.8",
+    "@huggingface/transformers": "^4.3.2",
+    "fastify": "^5.12.8",
+    "graphql": "^16.15.0",
+    "kysely": "^0.29.9",
+    "mercurius": "^16.12.1",
+    "pdf-lib": "^1.17.1",
+    "pg": "^8.23.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/pg": "^8.23.1",
+    "tsx": "^4.23.15",
+    "vitest": "^5.1.0"
+  }
+}

@@ -1,0 +1,6 @@
+#!/bin/sh
+# Per-edit check of one file ($1): syntax only, must stay under a second. Silent when fine.
+case "$1" in
+  *.js|*.mjs|*.cjs) node --check "$1" ;;
+  *) exit 0 ;;
+esac

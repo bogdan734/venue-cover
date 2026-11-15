@@ -1,0 +1,60 @@
+{
+  "measuredOn": "2026-11-14",
+  "texts": 400,
+  "goldenCases": 259,
+  "detectors": [
+    {
+      "id": "rules",
+      "planted": {
+        "NAME": 560,
+        "PHONE": 160,
+        "EMAIL": 80,
+        "ADDRESS": 80,
+        "SIN": 40,
+        "CARD": 40,
+        "DOB": 40,
+        "POSTAL": 40
+      },
+      "leaked": {
+        "NAME": 280
+      },
+      "plantedTotal": 1040,
+      "leakedTotal": 280,
+      "goldenChanged": 0,
+      "p50Ms": 0.06,
+      "p95Ms": 0.35,
+      "examples": [
+        "Gabriel and Zara's joint birthday at the hall, 170 guests, 3 hours, no alcohol",
+        "Wedding of Ingrid Castillo and Amara Okafor, 62 guests, wine served, 3 hours. Write to [EMAIL#5LTBID]",
+        "Retirement party for Sofia Tremblay (born [DOB#OSB6HO]), 130 guests, 6 hours",
+        "Mariage de Aisha Achterberg et Amara Natarajan, 33 invités, au [ADDRESS#CZO54R]",
+        "Léa and Hannah's joint birthday at the hall, 178 guests, 6 hours, no alcohol"
+      ]
+    },
+    {
+      "id": "model",
+      "planted": {
+        "NAME": 560,
+        "PHONE": 160,
+        "EMAIL": 80,
+        "ADDRESS": 80,
+        "SIN": 40,
+        "CARD": 40,
+        "DOB": 40,
+        "POSTAL": 40
+      },
+      "leaked": {
+        "NAME": 4
+      },
+      "plantedTotal": 1040,
+      "leakedTotal": 4,
+      "goldenChanged": 0,
+      "p50Ms": 2.79,
+      "p95Ms": 3.2,
+      "examples": [
+        "Siobhan and Zara's joint birthday at the hall, 76 guests, 3 hours, no alcohol",
+        "Siobhan and Zara's joint birthday at the hall, 36 guests, 6 hours, no alcohol"
+      ]
+    }
+  ]
+}

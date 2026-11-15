@@ -1,0 +1,20 @@
+{
+  "fake": {
+    "top1": 0.76,
+    "outcomeAccuracy": 0.57,
+    "referralRecall": 1,
+    "maxUnsafeAutomation": 0
+  },
+  "replay-qwen2.5-14b": {
+    "top1": 0.83,
+    "outcomeAccuracy": 0.72,
+    "referralRecall": 1,
+    "maxUnsafeAutomation": 0
+  },
+  "replay-qwen2.5-14b+transformers": {
+    "top1": 0.86,
+    "outcomeAccuracy": 0.87,
+    "referralRecall": 1,
+    "maxUnsafeAutomation": 0
+  }
+}

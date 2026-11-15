@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.next/
+.env
+.env.*
+!.env.example
+coverage/
+.cache/
+*.log
+# never track source material from third parties
+inputs/
+docs/private/
+*.xlsx
+*.xls
+# macOS Finder
+.DS_Store

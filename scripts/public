@@ -1,0 +1,97 @@
+#!/bin/sh
+# Serves the demo from this machine to the internet. Nothing is exposed but the web app; the API listens on 127.0.0.1 only.
+# The database is made fresh on every start and removed on stop. Stop with Ctrl-C.
+#
+# Two ways in, chosen by .env.public (ignored by git):
+#   - CLOUDFLARE_TUNNEL_TOKEN and PUBLIC_URL set: a named Cloudflare Tunnel from this machine, behind a Worker at PUBLIC_URL
+#     that never changes (docs/adr/0010-stable-address.md). The Worker reaches 127.0.0.1:3100, so keep WEB_PORT at 3100.
+#   - Otherwise: a quick tunnel, which needs no account and gives a new address each run.
+set -eu
+cd "$(dirname "$0")/.."
+
+# Node 22.11 cannot require() the ES-only packages of the CSS toolchain; 22.12 and later can.
+node -e 'const [a, b] = process.versions.node.split(".").map(Number); process.exit(a > 22 || (a === 22 && b >= 12) ? 0 : 1)' ||
+  export NODE_OPTIONS="${NODE_OPTIONS:-} --experimental-require-module --no-warnings"
+
+# The admin console needs a password. One is made on the first run and kept in .env.public (ignored by git); set
+# ADMIN_PASSWORD yourself to choose another.
+if [ ! -f .env.public ]; then
+  printf 'ADMIN_PASSWORD=%s\n' "$(openssl rand -base64 24 | tr -d '/+=' | cut -c1-18)" > .env.public
+  chmod 600 .env.public
+fi
+if [ -z "${ADMIN_PASSWORD:-}" ]; then
+  ADMIN_PASSWORD="$(sed -n 's/^ADMIN_PASSWORD=//p' .env.public)"
+fi
+export ADMIN_PASSWORD
+# The Telegram bot, when its token is in .env.public; never printed.
+if [ -z "${TELEGRAM_BOT_TOKEN:-}" ]; then
+  TELEGRAM_BOT_TOKEN="$(sed -n 's/^TELEGRAM_BOT_TOKEN=//p' .env.public)"
+fi
+[ -n "$TELEGRAM_BOT_TOKEN" ] && export TELEGRAM_BOT_TOKEN
+
+command -v cloudflared >/dev/null || { echo "cloudflared is not installed (brew install cloudflared)" >&2; exit 1; }
+PORT="${WEB_PORT:-3100}"
+
+# Something else on the port (a dev server, a forgotten run) would be what the tunnel shows. Refuse to start instead.
+if curl -s -o /dev/null -m 2 "http://localhost:$PORT/"; then
+  echo "port $PORT is already in use: stop whatever is serving it, then run this again" >&2
+  exit 1
+fi
+
+npm run --silent db:up
+(cd apps/web && npx next build >/dev/null)
+
+# The stable address, when there is one, is also where the Telegram bot opens the portals (a Mini App).
+PUBLIC_URL="${PUBLIC_URL:-$(sed -n 's/^PUBLIC_URL=//p' .env.public)}"
+[ -n "$PUBLIC_URL" ] && export PUBLIC_URL
+
+DEMO_HISTORY_DAYS="${DEMO_HISTORY_DAYS:-30}" WEB_MODE=start WEB_PORT="$PORT" API_PORT="${API_PORT:-3101}" node --import tsx apps/web/e2e/serve.ts &
+SERVER=$!
+trap 'kill "$SERVER" 2>/dev/null; wait "$SERVER" 2>/dev/null || true' EXIT INT TERM
+
+until curl -fs -o /dev/null "http://127.0.0.1:$PORT/"; do
+  kill -0 "$SERVER" 2>/dev/null || { echo "the demo did not start" >&2; exit 1; }
+  sleep 1
+done
+# Before anything is exposed, check that what answers is the locked build: a stranger must be sent to the sign-in
+# (a redirect) or refused, and must not get the back office.
+locked="$(curl -s -o /dev/null -w '%{http_code}' "http://127.0.0.1:$PORT/underwriting")"
+case "$locked" in
+  301|302|307|308|401|403) ;;
+  *) echo "the back office answered $locked to a stranger: not opening the tunnel" >&2; exit 1 ;;
+esac
+echo "The demo is up on http://127.0.0.1:$PORT and the back office is locked. Opening the tunnel."
+
+links() {
+  printf '\n  Customer portal (no password):  %s/p/FHV\n  All portals:                    %s/portals\n  Admin console:                  %s/login\n  Admin password:                 %s\n\n' "$1" "$1" "$1" "$ADMIN_PASSWORD"
+}
+
+# The tunnel's token stays in the environment, out of the process list.
+TUNNEL_TOKEN="${CLOUDFLARE_TUNNEL_TOKEN:-$(sed -n 's/^CLOUDFLARE_TUNNEL_TOKEN=//p' .env.public)}"
+
+if [ -n "$TUNNEL_TOKEN" ] && [ -n "$PUBLIC_URL" ]; then
+  export TUNNEL_TOKEN
+  cloudflared tunnel --no-autoupdate run 2>&1 | {
+    shown=""
+    while IFS= read -r line; do
+      if [ -z "$shown" ] && printf '%s' "$line" | grep -q 'Registered tunnel connection'; then
+        shown=1
+        links "$PUBLIC_URL"
+      fi
+      printf '%s\n' "$line"
+    done
+  }
+else
+  # The web app listens on 127.0.0.1 only, so the tunnel is the one way in from outside.
+  cloudflared tunnel --no-autoupdate --url "http://127.0.0.1:$PORT" 2>&1 | {
+    shown=""
+    while IFS= read -r line; do
+      url="$(printf '%s' "$line" | grep -o 'https://[a-z0-9-]*\.trycloudflare\.com' || true)"
+      if [ -n "$url" ] && [ -z "$shown" ]; then
+        shown=1
+        links "$url"
+      fi
+      printf '%s\n' "$line"
+    done
+  }
+fi

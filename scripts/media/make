@@ -1,0 +1,40 @@
+#!/bin/sh
+# Makes the film in docs/media from a running demo: shoots the footage, speaks the lines, edits, scores and renders it.
+#   scripts/media/make [step …]      steps: shoot voice cut score render (all of them, in this order, when none is named)
+# Needs the demo on http://127.0.0.1:3100 (npm run public) and ADMIN_PASSWORD in .env.public, and macOS: Swift and
+# AVFoundation render the video. The voice, Kokoro (an open model, Apache-2.0), is installed into .cache/tts on first use.
+# The footage stays in .cache/film (or FILM_WORK), so the edit can be redone without shooting again: `make cut score render`.
+set -eu
+cd "$(dirname "$0")/../.."
+WORK="${FILM_WORK:-$PWD/.cache/film}"
+mkdir -p "$WORK"
+set -a; . ./.env.public; set +a
+# Node 22.11 cannot require() ES-only packages; 22.12 and later can.
+node -e 'const [a, b] = process.versions.node.split(".").map(Number); process.exit(a > 22 || (a === 22 && b >= 12) ? 0 : 1)' ||
+  export NODE_OPTIONS="${NODE_OPTIONS:-} --experimental-require-module --no-warnings"
+
+for step in ${*:-shoot voice cut score render}; do
+  case "$step" in
+    shoot)
+      rm -rf "${WORK:?}/clips"
+      (cd apps/web && FILM_WORK="$WORK" node --import tsx e2e/film.ts) ;;
+    voice)
+      if [ ! -d .cache/tts/node_modules/kokoro-js ]; then
+        mkdir -p .cache/tts
+        printf '{"private":true,"type":"module"}\n' > .cache/tts/package.json
+        npm install --prefix .cache/tts --no-audit --no-fund kokoro-js@1.2.1
+      fi
+      node --import tsx scripts/media/voice.ts .cache/tts "$WORK" ;;
+    cut)
+      node --import tsx scripts/media/cut.ts "$WORK" ;;
+    score)
+      python3 scripts/media/score.py "$WORK/audio.json" "$WORK/sound.wav"
+      afconvert -f m4af -d aac -b 192000 "$WORK/sound.wav" "$WORK/sound.m4a" ;;
+    render)
+      swiftc -O scripts/media/main.swift -o "$WORK/compose"
+      "$WORK/compose" "$WORK/edl.json" "$WORK/sound.m4a" docs/media/venue-cover-tour.mp4 ;;
+    *)
+      echo "no step called $step: shoot, voice, cut, score or render" >&2
+      exit 2 ;;
+  esac
+done

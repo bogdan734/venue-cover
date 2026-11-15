@@ -1,0 +1,1853 @@
+{
+  "model": "qwen2.5:14b",
+  "responses": {
+    "02e8388832281c3b6ec79922": {
+      "activities": ["charity auction"],
+      "participants": 90,
+      "hours": 3,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "05f5a6352c59d1c80c065b07": {
+      "activities": ["triathlon"],
+      "participants": 150,
+      "hours": 6,
+      "alcohol": "none",
+      "flags": []
+    },
+    "072565b025aa3fe2e91e10b8": {
+      "activities": ["basketball tournament"],
+      "participants": null,
+      "hours": 6,
+      "alcohol": "none",
+      "flags": []
+    },
+    "07bd68ac538c389e3b2d114c": {
+      "activities": ["stag and doe"],
+      "participants": 140,
+      "hours": 5,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "0a9d7ebfcf86d7983fbffeb5": {
+      "activities": ["baketball tournament"],
+      "participants": 80,
+      "hours": 6,
+      "alcohol": "none",
+      "flags": []
+    },
+    "0ac800eb0f37b80122a3bb3a": {
+      "activities": ["trade show"],
+      "participants": 1200,
+      "hours": 8,
+      "alcohol": "none",
+      "flags": []
+    },
+    "0c0d2b61d9d03be727eb2572": {
+      "activities": ["bridal shower"],
+      "participants": 35,
+      "hours": 3,
+      "alcohol": "served",
+      "flags": []
+    },
+    "0d3b0b2fea421f4676d60427": {
+      "activities": ["karate tournament"],
+      "participants": 150,
+      "hours": 7,
+      "alcohol": "none",
+      "flags": []
+    },
+    "0dadab871048de3db20ff2a6": {
+      "activities": ["Pilates session"],
+      "participants": 15,
+      "hours": 1,
+      "alcohol": "none",
+      "flags": []
+    },
+    "0e73c8c463f15171ad901ed5": {
+      "activities": ["pickup basketball"],
+      "participants": 20,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "0f1670b4e74285a759ad1274": {
+      "activities": ["comedy night"],
+      "participants": 100,
+      "hours": 3,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "0f5bea1bad468a8af41ff4ca": {
+      "activities": ["wrestling show"],
+      "participants": 200,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "0fd23a5cf4b755a66c0532ab": {
+      "activities": ["cooking class"],
+      "participants": 16,
+      "hours": 3,
+      "alcohol": "served",
+      "flags": []
+    },
+    "11672e755877f7138db1408b": {
+      "activities": ["réunion du conseil d'administration"],
+      "participants": 12,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "11f1d9cb511ca06cbb17b5a0": {
+      "activities": ["book club meeting"],
+      "participants": 10,
+      "hours": 2,
+      "alcohol": "served",
+      "flags": []
+    },
+    "126e1e6f72cb85dc0a56cb30": {
+      "activities": ["Course à pied"],
+      "participants": 250,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "12d9aee714fafb111fe2e8e7": {
+      "activities": ["Axe throwing"],
+      "participants": 80,
+      "hours": 4,
+      "alcohol": "sold",
+      "flags": ["minors"]
+    },
+    "14ae5629c5c91453f6d1e298": {
+      "activities": ["motocross race"],
+      "participants": 200,
+      "hours": 6,
+      "alcohol": "none",
+      "flags": ["motorized"]
+    },
+    "198507525ca16523af6c8d35": {
+      "activities": ["mechanical bull", "fundraiser"],
+      "participants": 100,
+      "hours": 4,
+      "alcohol": "sold",
+      "flags": ["motorized"]
+    },
+    "1995612d8451fc5c9bbfc746": {
+      "activities": ["Boxing night"],
+      "participants": 150,
+      "hours": 4,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "1ad07404fa9d4dae465dbadd": {
+      "activities": ["fireworks display"],
+      "participants": 500,
+      "hours": 1,
+      "alcohol": "none",
+      "flags": ["fireworks"]
+    },
+    "1ad7fe348e18c2832035f62e": {
+      "activities": ["yoga class"],
+      "participants": 20,
+      "hours": null,
+      "alcohol": "none",
+      "flags": []
+    },
+    "1b080e7f833bb857754349a9": {
+      "activities": ["foam party"],
+      "participants": 5,
+      "hours": 4,
+      "alcohol": "none",
+      "flags": []
+    },
+    "1b2e10b235cec25b9335b1b2": {
+      "activities": ["family reunion"],
+      "participants": 80,
+      "hours": 6,
+      "alcohol": "served",
+      "flags": []
+    },
+    "1bb36ddd7fa4258a1ac094d3": {
+      "activities": ["scool play"],
+      "participants": 180,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "1f3af9e011412c991721fde4": {
+      "activities": ["conhole tournament"],
+      "participants": 60,
+      "hours": 4,
+      "alcohol": "none",
+      "flags": []
+    },
+    "2073b3815c5b2da3f618bddc": {
+      "activities": ["youth soccer league"],
+      "participants": 120,
+      "hours": 100,
+      "alcohol": "none",
+      "flags": []
+    },
+    "20d7bb94461433349cbf8a59": {
+      "activities": ["craft fair"],
+      "participants": 200,
+      "hours": 6,
+      "alcohol": "none",
+      "flags": []
+    },
+    "2383eb5b1b424fdac4a5c337": {
+      "activities": ["demolition derby"],
+      "participants": 300,
+      "hours": 5,
+      "alcohol": "sold",
+      "flags": ["motorized"]
+    },
+    "23edb936b07a21f5fc104e98": {
+      "activities": ["farmers market"],
+      "participants": 225,
+      "hours": 5,
+      "alcohol": "none",
+      "flags": []
+    },
+    "2690095b145109338dd7b5b5": {
+      "activities": ["rugby match"],
+      "participants": 60,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "287124a6e07d22d1a006baa2": {
+      "activities": ["funeral reception"],
+      "participants": 70,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "28c8724856921214cef87c0e": {
+      "activities": ["craft fair"],
+      "participants": 200,
+      "hours": 6,
+      "alcohol": "none",
+      "flags": []
+    },
+    "29064e9e51f1233e19599385": {
+      "activities": ["New Year's Eve party"],
+      "participants": 150,
+      "hours": 6,
+      "alcohol": "served",
+      "flags": []
+    },
+    "29f82e7d2535a62d002a4d95": {
+      "activities": ["Pickleball social"],
+      "participants": 24,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "2a7ee184e9e530d81e84caee": {
+      "activities": ["coking class"],
+      "participants": 16,
+      "hours": 3,
+      "alcohol": "served",
+      "flags": []
+    },
+    "2c79ddbcb5233b89f72478fa": {
+      "activities": ["roller derby bout"],
+      "participants": 120,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "2c9e418808d5dd6007d922dc": {
+      "activities": ["climbing competition"],
+      "participants": 80,
+      "hours": 6,
+      "alcohol": "none",
+      "flags": []
+    },
+    "2d2b95ee823d3204a91ffa8b": {
+      "activities": ["retirement party"],
+      "participants": 60,
+      "hours": 4,
+      "alcohol": "served",
+      "flags": []
+    },
+    "2d895458c208f59c3cb9c067": {
+      "activities": ["tea party"],
+      "participants": 20,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "2de88663dba710e3012b2dc5": {
+      "activities": ["trampoline party"],
+      "participants": 5,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "2e425f54fe099724cb07819c": {
+      "activities": ["retirement party", "karaoke", "magician"],
+      "participants": 70,
+      "hours": 4,
+      "alcohol": "served",
+      "flags": []
+    },
+    "2ea3ea1200f2b5e320fb9c85": {
+      "activities": ["board meeting"],
+      "participants": 12,
+      "hours": null,
+      "alcohol": "none",
+      "flags": []
+    },
+    "2fb411e788f45bd868696f1f": {
+      "activities": ["Charity 5k run"],
+      "participants": 250,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "30cc96d62fbb058586a101b8": {
+      "activities": ["Mixed martial arts event"],
+      "participants": 250,
+      "hours": 4,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "329fb1b0dc27c56349566281": {
+      "activities": ["Haunted house", "zip line"],
+      "participants": 200,
+      "hours": 6,
+      "alcohol": "none",
+      "flags": []
+    },
+    "33b9855e115e80918bde95ab": {
+      "activities": ["knitting circle"],
+      "participants": 12,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "342384b93a583d14f6221ae0": {
+      "activities": ["dunk tank"],
+      "participants": 100,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "347bb5e289c12255c2c507de": {
+      "activities": ["movie night"],
+      "participants": 80,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "3594b9f3d3d5c5a2c95b8f80": {
+      "activities": ["wedding reception"],
+      "participants": 400,
+      "hours": 6,
+      "alcohol": "served",
+      "flags": []
+    },
+    "35ddeedf6e14941140ce56a6": {
+      "activities": ["tackle football"],
+      "participants": 50,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "386e3f78e0bf453a20ff349e": {
+      "activities": ["fashion show"],
+      "participants": 150,
+      "hours": 2,
+      "alcohol": "served",
+      "flags": []
+    },
+    "38d270cc77b92f7df077e3cf": {
+      "activities": ["open house"],
+      "participants": 40,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "38ded6720350ed7661f8e4e5": {
+      "activities": ["silent disco"],
+      "participants": 150,
+      "hours": 4,
+      "alcohol": "none",
+      "flags": []
+    },
+    "39bb544fd2316d245075f1d7": {
+      "activities": ["choir concert"],
+      "participants": 140,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "3a740182f0c91510dd784f12": {
+      "activities": ["funeral reception"],
+      "participants": 70,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "3afca1842b3a88bb3448ba09": {
+      "activities": ["firearms demonstration"],
+      "participants": 30,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": ["weapons"]
+    },
+    "3b66281a72524b3342fbe360": {
+      "activities": ["zip line"],
+      "participants": 150,
+      "hours": 6,
+      "alcohol": "none",
+      "flags": []
+    },
+    "3b9a916a3171c94e6095d8fa": {
+      "activities": ["skate jam"],
+      "participants": 100,
+      "hours": 5,
+      "alcohol": "none",
+      "flags": []
+    },
+    "3c27b7333b175198317c136c": {
+      "activities": ["charity bake sale"],
+      "participants": 60,
+      "hours": 4,
+      "alcohol": "none",
+      "flags": []
+    },
+    "3caad4814965c9c464b3f1ee": {
+      "activities": ["annual general meeting"],
+      "participants": 150,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "3fe3743fc8e5d1d7baddc1e7": {
+      "activities": ["wedding reception", "DJ", "photo booth"],
+      "participants": 120,
+      "hours": 6,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "4372b931ce62811f0ed46c67": {
+      "activities": ["piano recital"],
+      "participants": 60,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "43ff52f01e42a1f48559b026": {
+      "activities": ["exotic animal show"],
+      "participants": 100,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": ["animals"]
+    },
+    "4656997248755e4d1b52e2a3": {
+      "activities": ["baby shower"],
+      "participants": 25,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "47e46c429897caa08fe33d87": {
+      "activities": ["potery workshop"],
+      "participants": 15,
+      "hours": 4,
+      "alcohol": "none",
+      "flags": []
+    },
+    "48f3a20c79526ecb9dd37af3": {
+      "activities": ["softball tournament"],
+      "participants": 120,
+      "hours": 8,
+      "alcohol": "none",
+      "flags": []
+    },
+    "49806323d059290bfc1ba7b8": {
+      "activities": ["balloon artist"],
+      "participants": 40,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "4a44e8e5861db24977c0e95b": {
+      "activities": ["Baminton drop-in"],
+      "participants": 30,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "4b1ac35ffade8892fb1882c0": {
+      "activities": ["soirée karaoké"],
+      "participants": 60,
+      "hours": 4,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "4b63c630107d8152bcd4a583": {
+      "activities": ["water aerobics"],
+      "participants": 18,
+      "hours": 1,
+      "alcohol": "none",
+      "flags": []
+    },
+    "4bc1c6e63a86f16b4306c485": {
+      "activities": ["hockey camp"],
+      "participants": 40,
+      "hours": 50,
+      "alcohol": "none",
+      "flags": []
+    },
+    "4bcc2f73607040f7872b44a1": {
+      "activities": ["birthday party"],
+      "participants": 30,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "4d7b068500cefe153123704e": {
+      "activities": ["hot dog stand"],
+      "participants": 300,
+      "hours": 8,
+      "alcohol": "none",
+      "flags": []
+    },
+    "4da2dde51e1e5a71a10fefd4": {
+      "activities": ["fundraiser"],
+      "participants": 120,
+      "hours": 4,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "4e8760b6fa0f27939483276b": {
+      "activities": ["indoor soccer"],
+      "participants": 60,
+      "hours": 4,
+      "alcohol": "none",
+      "flags": []
+    },
+    "4f38711b315951aba91c234d": {
+      "activities": ["craft fair"],
+      "participants": 600,
+      "hours": 6,
+      "alcohol": "none",
+      "flags": []
+    },
+    "4ffdc08d0bb35a9d7d86f8f2": {
+      "activities": ["general meeting"],
+      "participants": 150,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "5054d5ed14ac5c89d1b0be14": {
+      "activities": ["Craft seller table"],
+      "participants": 100,
+      "hours": 6,
+      "alcohol": "none",
+      "flags": []
+    },
+    "50f8f69f7ac79a9096ff0f42": {
+      "activities": ["coedy night"],
+      "participants": 100,
+      "hours": 3,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "51cc6483526cfcd473aa039d": {
+      "activities": ["volleyball tournament"],
+      "participants": 96,
+      "hours": 6,
+      "alcohol": "none",
+      "flags": []
+    },
+    "51e3f18e43ba0d41fbffe2a1": {
+      "activities": ["Feux d'artifice"],
+      "participants": 500,
+      "hours": 1,
+      "alcohol": "none",
+      "flags": ["fireworks"]
+    },
+    "52f2076ca621a28f88021b0c": {
+      "activities": ["annual general meeting"],
+      "participants": 700,
+      "hours": 4,
+      "alcohol": "none",
+      "flags": []
+    },
+    "531cac87c808b7cb3dc8b087": {
+      "activities": ["horse riding camp"],
+      "participants": 20,
+      "hours": 60,
+      "alcohol": "none",
+      "flags": ["minors"]
+    },
+    "537725bddec7cbd6d9305a39": {
+      "activities": ["charity auction"],
+      "participants": 350,
+      "hours": 4,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "53809d4648668fe3df4f145e": {
+      "activities": ["wedding ceremony"],
+      "participants": 80,
+      "hours": 1,
+      "alcohol": "none",
+      "flags": []
+    },
+    "5515e943ba9145161c47e58e": {
+      "activities": ["drone racing league night"],
+      "participants": 40,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "5690a83e9335fe71fbd763ea": {
+      "activities": ["wedding reception"],
+      "participants": 120,
+      "hours": 6,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "56da0ea48d37715d5c778bd5": {
+      "activities": ["cornhole tournament"],
+      "participants": 60,
+      "hours": 4,
+      "alcohol": "none",
+      "flags": []
+    },
+    "59763f1d6f5312ae6b7ea399": {
+      "activities": ["bridal shower"],
+      "participants": 35,
+      "hours": 3,
+      "alcohol": "served",
+      "flags": []
+    },
+    "5a48dd0999e21014d2cf652b": {
+      "activities": ["dodgeball night"],
+      "participants": 40,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "5b1f1c42ae6a63a9512064f6": {
+      "activities": ["retirement party"],
+      "participants": 60,
+      "hours": 4,
+      "alcohol": "served",
+      "flags": []
+    },
+    "5b591824a1614949853486a0": {
+      "activities": ["wedding ceremony"],
+      "participants": 80,
+      "hours": 1,
+      "alcohol": "none",
+      "flags": []
+    },
+    "5b6c849acc8f9d6bb6d27b9f": {
+      "activities": ["street musician performing"],
+      "participants": 50,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "5b7eedf3065adc091c84abbb": {
+      "activities": ["bake sale"],
+      "participants": 80,
+      "hours": 5,
+      "alcohol": "none",
+      "flags": []
+    },
+    "5bc2a8012b74e19219c2d2d9": {
+      "activities": ["Sunday morning yoga"],
+      "participants": 25,
+      "hours": 1,
+      "alcohol": "none",
+      "flags": []
+    },
+    "5fc330ad041b06f37a3b8b94": {
+      "activities": ["staff holiday party"],
+      "participants": 90,
+      "hours": 4,
+      "alcohol": "served",
+      "flags": []
+    },
+    "60204632da4b18902a892ea1": {
+      "activities": ["Kaaoke night"],
+      "participants": 60,
+      "hours": 4,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "6055db9b932e008af4faad64": {
+      "activities": ["church service"],
+      "participants": 100,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "6065dddc6f86e27b1e031f65": {
+      "activities": ["esports tournament"],
+      "participants": 64,
+      "hours": 8,
+      "alcohol": "none",
+      "flags": []
+    },
+    "611ea35117424b65569e98bd": {
+      "activities": ["birthday party"],
+      "participants": 30,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "6134f7762fb2622c952f523b": {
+      "activities": ["poetry reading", "candlelight"],
+      "participants": 30,
+      "hours": 2,
+      "alcohol": "served",
+      "flags": []
+    },
+    "617f3b62c94b06147cbf7b24": {
+      "activities": ["obstacle course", "mud run"],
+      "participants": 200,
+      "hours": 5,
+      "alcohol": "none",
+      "flags": []
+    },
+    "61e688f2563f97c343c97f79": {
+      "activities": ["family reunion"],
+      "participants": 80,
+      "hours": 6,
+      "alcohol": "served",
+      "flags": []
+    },
+    "6298b0b8c1b68938b8cd9578": {
+      "activities": ["atelier de poterie"],
+      "participants": 15,
+      "hours": 4,
+      "alcohol": "none",
+      "flags": []
+    },
+    "62ab2625bd76bb0933a285b6": {
+      "activities": ["birthday party"],
+      "participants": 25,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "640d087c3a126dad50fde26e": {
+      "activities": ["sheep shearing exhibition"],
+      "participants": 100,
+      "hours": 4,
+      "alcohol": "none",
+      "flags": ["animals"]
+    },
+    "6435b186bb81f7fadfd9cd5f": {
+      "activities": ["Marché de producteurs"],
+      "participants": 200,
+      "hours": 5,
+      "alcohol": "none",
+      "flags": []
+    },
+    "66eb33831e59b232e0666215": {
+      "activities": ["yoga class"],
+      "participants": 5,
+      "hours": 5,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "6733bb40d096b8c3c817f1bd": {
+      "activities": ["graduation party"],
+      "participants": 45,
+      "hours": 4,
+      "alcohol": "none",
+      "flags": []
+    },
+    "675a6f56467f8625f5dabcbd": {
+      "activities": ["skate jam"],
+      "participants": 100,
+      "hours": 5,
+      "alcohol": "none",
+      "flags": []
+    },
+    "6872e3fa1b2fd65f5f799707": {
+      "activities": ["hockey tournament", "banquet"],
+      "participants": 150,
+      "hours": 8,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "68e777007daa62f7f24accc4": {
+      "activities": ["ice hockey game"],
+      "participants": 5,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "691b8637468fad3f5d3f11b2": {
+      "activities": ["darts night"],
+      "participants": 20,
+      "hours": 3,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "69fbbf05098550778a22bcbd": {
+      "activities": ["cours de yoga"],
+      "participants": 20,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "69fc9f161804ec9adf2ef2d2": {
+      "activities": ["band performance"],
+      "participants": 120,
+      "hours": 3,
+      "alcohol": "served",
+      "flags": []
+    },
+    "6b1230194cf5c8c4f02b4a3f": {
+      "maxParticipants": 120,
+      "alcoholAllowed": true,
+      "excludedActivities": ["mechanical bulls"],
+      "limitsDollars": [],
+      "maxClassWithoutReview": null
+    },
+    "6c99565199ba564c76c5d065": {
+      "activities": ["charity auction", "fundraiser dinner"],
+      "participants": 120,
+      "hours": 4,
+      "alcohol": "served",
+      "flags": []
+    },
+    "6d1ac841e8b92c31a0eadc3a": {
+      "activities": ["table tennis"],
+      "participants": 16,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "6d9d5b27d9fda5d598932d7b": {
+      "activities": ["beer garden"],
+      "participants": 250,
+      "hours": 6,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "6d9e3dd2da7349778dd1c9e7": {
+      "activities": ["trampoline party"],
+      "participants": 30,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": ["inflatables", "minors"]
+    },
+    "6df2256de2ab6495b1ad13d2": {
+      "activities": ["karaoke night"],
+      "participants": 60,
+      "hours": 4,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "701fe2a408a9dc9910af8602": {
+      "activities": ["birthday party"],
+      "participants": 25,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "70253d6479b22b247cb0db9d": {
+      "activities": ["basketball tournament"],
+      "participants": 80,
+      "hours": 6,
+      "alcohol": "none",
+      "flags": []
+    },
+    "70df67fdfb83b5cf6237fe12": {
+      "activities": ["réception funéraire"],
+      "participants": 70,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "70fb8974f4c6006c1ad5aace": {
+      "activities": ["charity walk"],
+      "participants": 120,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "71ce4689deeb068053c12787": {
+      "activities": ["Live rock band concert"],
+      "participants": 200,
+      "hours": 4,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "723674c7a7d79fbb226c54e5": {
+      "activities": ["yoga class"],
+      "participants": 5,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "73076234d83464464699fde4": {
+      "activities": ["bungee jumping"],
+      "participants": 60,
+      "hours": 5,
+      "alcohol": "none",
+      "flags": []
+    },
+    "73190c78413ad90cbbba8175": {
+      "activities": ["book club meeting"],
+      "participants": 10,
+      "hours": 2,
+      "alcohol": "served",
+      "flags": []
+    },
+    "75154a80913f58f990f09620": {
+      "activities": ["judo class"],
+      "participants": 15,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "76378fba44b024185a37fcdd": {
+      "activities": ["Quinceanera"],
+      "participants": 130,
+      "hours": 5,
+      "alcohol": "none",
+      "flags": []
+    },
+    "781449330d8067521107ae0a": {
+      "activities": ["escape room"],
+      "participants": 30,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "7837417d0157bac40f9bacf7": {
+      "activities": ["tea party"],
+      "participants": 20,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "79812cc114fd9cd240fe03d8": {
+      "activities": ["charity auction"],
+      "participants": 90,
+      "hours": 3,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "79a459d96c4e8f0b45b46b8c": {
+      "activities": ["tennis tournament"],
+      "participants": 64,
+      "hours": 8,
+      "alcohol": "none",
+      "flags": []
+    },
+    "7aee711f9d14f60a57fa4470": {
+      "activities": ["slo-pitch", "beer"],
+      "participants": 90,
+      "hours": 50,
+      "alcohol": "served",
+      "flags": []
+    },
+    "7bcf59feb4105f2ffc3546ed": {
+      "activities": ["New Year's Eve party"],
+      "participants": 150,
+      "hours": 6,
+      "alcohol": "served",
+      "flags": []
+    },
+    "7ccbf8dfa7113f2e7002996c": {
+      "activities": ["Live rock band concert"],
+      "participants": 200,
+      "hours": 4,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "7ec29efefc361b7036c2b9e5": {
+      "activities": ["small concert", "choir"],
+      "participants": 100,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "811a807557cab936748091eb": {
+      "activities": ["family reunion"],
+      "participants": 80,
+      "hours": null,
+      "alcohol": null,
+      "flags": []
+    },
+    "81b63f779203270ebe7df8aa": {
+      "activities": ["board meeting"],
+      "participants": 12,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "81f586ecab7bdf6270e46a28": {
+      "activities": ["bake sale"],
+      "participants": 80,
+      "hours": 5,
+      "alcohol": "none",
+      "flags": []
+    },
+    "850cf1ed2068de97cbdd9162": {
+      "activities": ["community parade"],
+      "participants": 250,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "851bbbe4f6edb1ee2a0488f1": {
+      "activities": ["paintball tournament"],
+      "participants": 80,
+      "hours": 6,
+      "alcohol": "none",
+      "flags": []
+    },
+    "85b57f8ab9250dac29b2b46d": {
+      "activities": ["school play"],
+      "participants": 180,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "86032a3464eb7da0d0e4770f": {
+      "activities": ["piano lesson"],
+      "participants": 9,
+      "hours": 150,
+      "alcohol": "none",
+      "flags": []
+    },
+    "86536ed27d0c0784a44b84f8": {
+      "activities": ["mixed martial arts event"],
+      "participants": 5,
+      "hours": 4,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "8792a70e7bdec5b1a27c6720": {
+      "activities": ["yoga class"],
+      "participants": 20,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "87fd5fb4f114a7a24a1a2437": {
+      "activities": ["Haunted house"],
+      "participants": 100,
+      "hours": 5,
+      "alcohol": "none",
+      "flags": []
+    },
+    "8876edec06dd3db509b38a61": {
+      "activities": ["yoga class"],
+      "participants": 20,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "8a5fc02d39c8a7a9eaf05bce": {
+      "activities": ["stag and doe"],
+      "participants": 140,
+      "hours": 5,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "8c0f65b0c64232373a41f763": {
+      "activities": ["Tournoi de volleyball"],
+      "participants": 96,
+      "hours": 6,
+      "alcohol": "none",
+      "flags": []
+    },
+    "8d2743ed4f0f7b51df32dca2": {
+      "activities": ["farmers market"],
+      "participants": 990,
+      "hours": 6,
+      "alcohol": "none",
+      "flags": []
+    },
+    "8d82df486b7d83f40dbe5233": {
+      "activities": ["Quinceanera"],
+      "participants": 130,
+      "hours": 5,
+      "alcohol": "none",
+      "flags": []
+    },
+    "8dcf54574ffb61e59e3a4240": {
+      "activities": ["Fall festival", "petting zoo", "bake sale"],
+      "participants": 250,
+      "hours": 6,
+      "alcohol": "none",
+      "flags": ["animals"]
+    },
+    "8eb0823510ef655c96d292b3": {
+      "activities": ["open house"],
+      "participants": 40,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "8f8a1114b0de47f1df7adc86": {
+      "activities": ["pub trivia night"],
+      "participants": 70,
+      "hours": 3,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "9019e614cabca4a9f563fda4": {
+      "activities": ["darts night"],
+      "participants": 20,
+      "hours": 3,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "9089636e6ba5a4bd66b442a2": {
+      "activities": ["foam party"],
+      "participants": 120,
+      "hours": 4,
+      "alcohol": "none",
+      "flags": []
+    },
+    "90cb457b3a581f56e961710e": {
+      "activities": ["cours de cuisine"],
+      "participants": 16,
+      "hours": 3,
+      "alcohol": "served",
+      "flags": []
+    },
+    "915502d50ab02d10d70527fa": {
+      "activities": ["craft fair"],
+      "participants": null,
+      "hours": null,
+      "alcohol": "none",
+      "flags": []
+    },
+    "919202372a900d66218c651a": {
+      "activities": ["Chess tournament"],
+      "participants": 50,
+      "hours": 5,
+      "alcohol": "none",
+      "flags": []
+    },
+    "921b9d0aea8f74939ef40b69": {
+      "activities": ["staff holiday party"],
+      "participants": 90,
+      "hours": 4,
+      "alcohol": "served",
+      "flags": []
+    },
+    "940885ae60a1fb2fbcf8c664": {
+      "activities": ["baby shower"],
+      "participants": 25,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "95ccc19129d6dfc60f9e92f9": {
+      "activities": ["réception de mariage"],
+      "participants": 120,
+      "hours": 6,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "970e64c9d834cc61276e9c2f": {
+      "activities": ["DJ night", "dancing"],
+      "participants": 150,
+      "hours": 5,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "97a2b20f6c8410bc4e6e22de": {
+      "activities": ["Bocce tournament"],
+      "participants": 32,
+      "hours": 4,
+      "alcohol": "served",
+      "flags": []
+    },
+    "97f0954e308f65e632c978a2": {
+      "activities": ["face painting booth"],
+      "participants": 150,
+      "hours": 5,
+      "alcohol": "none",
+      "flags": []
+    },
+    "9a3b86ae510c895f61dc3110": {
+      "activities": ["Zumba class"],
+      "participants": 40,
+      "hours": 1.5,
+      "alcohol": "none",
+      "flags": []
+    },
+    "9a470f4763718a027d38cda8": {
+      "activities": ["Bingo de charité"],
+      "participants": 100,
+      "hours": 3,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "9ad921b1bf4af43c6c9b27c1": {
+      "activities": ["obstacle race", "food truck"],
+      "participants": 300,
+      "hours": 5,
+      "alcohol": "none",
+      "flags": []
+    },
+    "9b1e191f663efa160662ac01": {
+      "activities": ["art class"],
+      "participants": 14,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "9c8bedb01642f4ff88886edf": {
+      "activities": ["birthday party"],
+      "participants": null,
+      "hours": null,
+      "alcohol": "none",
+      "flags": []
+    },
+    "9d70334389a6bcfedea7e93e": {
+      "activities": ["piano recital"],
+      "participants": 60,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "9fc5f7819ac17fe37e15e9c8": {
+      "activities": ["cours de zumba"],
+      "participants": 40,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "a096b4163976cac5e234309c": {
+      "activities": ["climbing competition"],
+      "participants": 80,
+      "hours": 6,
+      "alcohol": "none",
+      "flags": []
+    },
+    "a0c316c00f5ea9efde4a6f2a": {
+      "activities": ["teenage dance"],
+      "participants": 220,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "a21037cfea1467a8578f120c": {
+      "activities": ["food truck", "street fair"],
+      "participants": 200,
+      "hours": 6,
+      "alcohol": "none",
+      "flags": []
+    },
+    "a3bb886f6563cb2151aaebc7": {
+      "activities": ["wedding reception"],
+      "participants": 120,
+      "hours": 6,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "a484bd5d056874f80b05e559": {
+      "activities": ["trade show"],
+      "participants": 250,
+      "hours": 8,
+      "alcohol": "none",
+      "flags": []
+    },
+    "a5a28d463b91f807116ced0c": {
+      "activities": ["knitting group"],
+      "participants": 14,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "aa4fcca619ae7b54e994205c": {
+      "activities": ["Boxing night"],
+      "participants": 150,
+      "hours": 4,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "aa856e6dbef915bfe306702d": {
+      "activities": ["inflatable slide"],
+      "participants": 200,
+      "hours": 5,
+      "alcohol": "none",
+      "flags": ["inflatables", "minors"]
+    },
+    "abcc722f3b3f837f6d7d6f3e": {
+      "activities": ["fundraiser dinner"],
+      "participants": 150,
+      "hours": 4,
+      "alcohol": "served",
+      "flags": []
+    },
+    "ad35c70527fd6dbb542a4a89": {
+      "activities": ["art camp"],
+      "participants": 30,
+      "hours": 30,
+      "alcohol": "none",
+      "flags": []
+    },
+    "add536f3e9b5ae14ce94b299": {
+      "activities": ["escape room"],
+      "participants": 30,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "ae35f6a81e4f2a38dab06487": {
+      "activities": ["yoga class"],
+      "participants": 5,
+      "hours": 5,
+      "alcohol": "none",
+      "flags": []
+    },
+    "b0abcdff5f712655cbfa461b": {
+      "activities": ["horse show"],
+      "participants": 100,
+      "hours": 8,
+      "alcohol": "none",
+      "flags": []
+    },
+    "b1728ba9dca4f23bd0c81f53": {
+      "activities": ["golf tournament"],
+      "participants": 120,
+      "hours": 8,
+      "alcohol": "served",
+      "flags": []
+    },
+    "b1d9239d4e887e32d57d8404": {
+      "activities": ["Pony rides", "Fair"],
+      "participants": 200,
+      "hours": 6,
+      "alcohol": "none",
+      "flags": ["animals"]
+    },
+    "b2ad44085bc0b01366be6dbe": {
+      "activities": ["Pirates session"],
+      "participants": 15,
+      "hours": 1,
+      "alcohol": "none",
+      "flags": []
+    },
+    "b512fb4440d29a21d7f5c86c": {
+      "maxParticipants": 400,
+      "alcoholAllowed": true,
+      "excludedActivities": ["fireworks", "firearms demonstrations"],
+      "limitsDollars": [2000000, 5000000],
+      "maxClassWithoutReview": "B"
+    },
+    "b52198d52615aa9d7dfb71ef": {
+      "activities": ["skydiving"],
+      "participants": 30,
+      "hours": 8,
+      "alcohol": "none",
+      "flags": []
+    },
+    "b64b32fc4a665442eb977d3f": {
+      "activities": ["youth dance"],
+      "participants": 200,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "b7fdf022e2210884f5cb6a54": {
+      "activities": ["day camp", "programming"],
+      "participants": 60,
+      "hours": 40,
+      "alcohol": "none",
+      "flags": []
+    },
+    "b8ffb38a7abf650c8615e57e": {
+      "activities": ["youth dance"],
+      "participants": 500,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "bbabb97d9f96e2995570a95e": {
+      "activities": ["competitive crossfit games"],
+      "participants": 90,
+      "hours": 6,
+      "alcohol": "none",
+      "flags": []
+    },
+    "bc8e09a1b989ab0423f8f8c2": {
+      "activities": ["hockey game"],
+      "participants": 40,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "be203caa5444f44ea8ef75f9": {
+      "activities": ["ice hockey game"],
+      "participants": 40,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "bee7eb0499ee680630798cb3": {
+      "activities": ["Tai chi"],
+      "participants": 25,
+      "hours": 1,
+      "alcohol": "none",
+      "flags": []
+    },
+    "bf5e27f6438cfe8f5c8b7474": {
+      "activities": ["fun run"],
+      "participants": 800,
+      "hours": 4,
+      "alcohol": "none",
+      "flags": []
+    },
+    "bfe6ccec325fd6fc81f29635": {
+      "activities": ["roller skating party"],
+      "participants": 40,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "c05d0221c9d5012ef50cc5f9": {
+      "activities": ["Défilé communautaire"],
+      "participants": 250,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "c09b97aae76792f6505e37dd": {
+      "activities": ["charity walk"],
+      "participants": 120,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "c134bcaaa24ef2b69813ad94": {
+      "activities": ["spectacle de lutte"],
+      "participants": 200,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "c207cbc77df4101b9c347c9d": {
+      "activities": ["board meeting"],
+      "participants": 12,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "c59ca357882d38f7935b2d2b": {
+      "activities": ["choir concert"],
+      "participants": 140,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "c62fc52e754065ef8b7be8d6": {
+      "activities": ["casino night", "fundraiser"],
+      "participants": 120,
+      "hours": 4,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "c65a87e176a367be9059f43e": {
+      "activities": ["pottery workshop"],
+      "participants": 15,
+      "hours": 4,
+      "alcohol": "none",
+      "flags": []
+    },
+    "c80a9daf78a81afc1e8acbc9": {
+      "activities": ["Pickleball social"],
+      "participants": 24,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "cb1bd25087db76053560127a": {
+      "activities": ["tackle football"],
+      "participants": 5,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "cb3af442619cce69e3560cdc": {
+      "activities": ["overnight camping"],
+      "participants": 40,
+      "hours": 14,
+      "alcohol": "none",
+      "flags": ["overnight"]
+    },
+    "cbd0a3c75281aef8daaadd88": {
+      "activities": ["table tennis"],
+      "participants": 16,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "cc2674c827c2df88f26cc2f7": {
+      "activities": ["soirée dansante", "DJ"],
+      "participants": 150,
+      "hours": 5,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "cd03de6661fc12c254caffda": {
+      "activities": ["personal training"],
+      "participants": 7,
+      "hours": 300,
+      "alcohol": "none",
+      "flags": []
+    },
+    "cd526a90cf032f4313024471": {
+      "activities": ["fête d'anniversaire"],
+      "participants": 30,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "ce232f74e42b21a6cf06baab": {
+      "activities": ["fashion show"],
+      "participants": 150,
+      "hours": 2,
+      "alcohol": "served",
+      "flags": []
+    },
+    "ce6c1e84ed1b98125b7c590f": {
+      "activities": ["water aerobics"],
+      "participants": 18,
+      "hours": 1,
+      "alcohol": "none",
+      "flags": []
+    },
+    "ce7f4918368af9b599c6db2d": {
+      "activities": ["triathlon"],
+      "participants": 150,
+      "hours": 6,
+      "alcohol": "none",
+      "flags": []
+    },
+    "cef635a52e814201fd7ceb95": {
+      "activities": ["Kids birthday party", "bouncy castle"],
+      "participants": 40,
+      "hours": 4,
+      "alcohol": "none",
+      "flags": ["minors", "inflatables"]
+    },
+    "d013ef92d80ea0eec753f4dd": {
+      "activities": ["Zumba class"],
+      "participants": 40,
+      "hours": 1.5,
+      "alcohol": "none",
+      "flags": []
+    },
+    "d05f2f85681d9d8141833b86": {
+      "activities": ["Chess tournament"],
+      "participants": 50,
+      "hours": 5,
+      "alcohol": "none",
+      "flags": []
+    },
+    "d07efe9bfc0d99e5757105e7": {
+      "activities": ["horse show"],
+      "participants": 100,
+      "hours": 8,
+      "alcohol": "none",
+      "flags": []
+    },
+    "d23222182e461ebc9ef6bbc8": {
+      "activities": ["trade show"],
+      "participants": 250,
+      "hours": 8,
+      "alcohol": "none",
+      "flags": []
+    },
+    "d454db8306adcccbd1504010": {
+      "activities": ["Tai chi"],
+      "participants": 25,
+      "hours": 1,
+      "alcohol": "none",
+      "flags": []
+    },
+    "d62018202df9ef6e5355787b": {
+      "activities": ["coffee cart"],
+      "participants": 300,
+      "hours": 8,
+      "alcohol": "none",
+      "flags": []
+    },
+    "d763a3b35fe0adfee7f3fed6": {
+      "activities": ["wedding reception"],
+      "participants": 100,
+      "hours": 5,
+      "alcohol": null,
+      "flags": []
+    },
+    "d89a513c93444e8773071d9f": {
+      "activities": ["wrestling show"],
+      "participants": 200,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "d94d96066a201e5c58d3306f": {
+      "activities": ["tractor pull"],
+      "participants": 200,
+      "hours": 5,
+      "alcohol": "none",
+      "flags": []
+    },
+    "db96d60f51a1854eeb394b54": {
+      "activities": ["stunt show", "motorcycles"],
+      "participants": 250,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "dc58b508fa7e88ec18c4dbf8": {
+      "activities": ["Slo-pitch league"],
+      "participants": 80,
+      "hours": 60,
+      "alcohol": "served",
+      "flags": []
+    },
+    "dd1a8dcb4c81352e305ad77f": {
+      "activities": ["youth dance"],
+      "participants": 200,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "ddc2edbf92adc336764bd293": {
+      "activities": ["swim meet"],
+      "participants": 200,
+      "hours": 6,
+      "alcohol": "none",
+      "flags": []
+    },
+    "de275cbc2182ee20a78c2f07": {
+      "activities": ["fun run"],
+      "participants": null,
+      "hours": 3,
+      "alcohol": null,
+      "flags": []
+    },
+    "e0bccf126131808dd2cdc91e": {
+      "activities": ["fête d'anniversaire"],
+      "participants": 30,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "e1032e8b250fb4bcf745dcf0": {
+      "activities": ["go-kart racing"],
+      "participants": 60,
+      "hours": 6,
+      "alcohol": "none",
+      "flags": []
+    },
+    "e381b928b1ed9cf88ef04b97": {
+      "activities": ["craft fair", "bake sale"],
+      "participants": 180,
+      "hours": 5,
+      "alcohol": "none",
+      "flags": []
+    },
+    "e4e8bd7ecf5a3658d16da3b1": {
+      "activities": ["underwater basket negotiation workshop"],
+      "participants": 12,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "e70a307f32818401251658b4": {
+      "activities": ["yoga classes"],
+      "participants": 15,
+      "hours": 200,
+      "alcohol": "none",
+      "flags": []
+    },
+    "e74099eef2c99fb2e7ece1ec": {
+      "activities": ["badminton drop-in"],
+      "participants": 30,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "e848daedbc97c0d3608ef7f1": {
+      "activities": ["karaoke night"],
+      "participants": 60,
+      "hours": null,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "e84c62d07f59a9888f555ff6": {
+      "activities": ["swimming instruction"],
+      "participants": 10,
+      "hours": 100,
+      "alcohol": "none",
+      "flags": []
+    },
+    "ea48645ee35f9cf9e1bcc3a4": {
+      "activities": ["hockey league", "beer"],
+      "participants": 150,
+      "hours": 200,
+      "alcohol": "served",
+      "flags": []
+    },
+    "ea709d49271a5d949123fb5d": {
+      "activities": ["graduation party"],
+      "participants": 45,
+      "hours": 4,
+      "alcohol": "none",
+      "flags": []
+    },
+    "eadc691853eda0bfec0b81cb": {
+      "activities": ["camp de jour"],
+      "participants": 60,
+      "hours": 40,
+      "alcohol": "none",
+      "flags": []
+    },
+    "efbed57e57c5cb6d33c1a588": {
+      "activities": ["bocce tournament"],
+      "participants": 32,
+      "hours": 4,
+      "alcohol": "served",
+      "flags": []
+    },
+    "f0f95805c30bd70af15317ee": {
+      "activities": ["knitting circle"],
+      "participants": 12,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "f1a9343a0522027734f0c437": {
+      "activities": ["school fair", "face painting", "inflatable slide"],
+      "participants": 150,
+      "hours": 4,
+      "alcohol": "none",
+      "flags": ["inflatables", "minors"]
+    },
+    "f3a0f4c50acbf64224e9c1e7": {
+      "activities": ["movie night"],
+      "participants": 80,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "f3c8e46e9cb8c16820f5e439": {
+      "activities": ["Chrch service"],
+      "participants": 100,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "f475e8a0e699f144882d3b2d": {
+      "activities": ["art class"],
+      "participants": 14,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "f59206ae1ec8a1fded054776": {
+      "activities": ["cheese rolling competition"],
+      "participants": 50,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "f5eaee85997e404d2f27abd2": {
+      "activities": ["boxing training"],
+      "participants": 10,
+      "hours": 300,
+      "alcohol": "none",
+      "flags": []
+    },
+    "f5fef3986fb4c14908e5ca7b": {
+      "activities": ["selling handmade candles", "selling soaps", "craft fair"],
+      "participants": 150,
+      "hours": 6,
+      "alcohol": "none",
+      "flags": []
+    },
+    "f6fcca8cacfc5ae8c14cfac2": {
+      "activities": ["art class"],
+      "participants": null,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "f7a66feafdac5915c33a6026": {
+      "activities": ["pièce de théâtre scolaire"],
+      "participants": 180,
+      "hours": 2,
+      "alcohol": "none",
+      "flags": []
+    },
+    "fa6647111bd574926316564e": {
+      "activities": ["Haunted house"],
+      "participants": 100,
+      "hours": 5,
+      "alcohol": "none",
+      "flags": []
+    },
+    "fc08c145c3a43e2a72f41809": {
+      "activities": ["yoga class"],
+      "participants": 5,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    },
+    "fc32c3ed72601a7adeebbd79": {
+      "activities": ["wedding"],
+      "participants": 90,
+      "hours": 6,
+      "alcohol": "sold",
+      "flags": []
+    },
+    "fdd7df2e2092c6f082b1310a": {
+      "activities": ["fundraiser dinner"],
+      "participants": 150,
+      "hours": 4,
+      "alcohol": "served",
+      "flags": []
+    },
+    "fe10475c4361b72efc6c2bc4": {
+      "activities": ["petting zoo"],
+      "participants": 150,
+      "hours": 5,
+      "alcohol": "none",
+      "flags": ["animals"]
+    },
+    "fe62ac1cc52ed987c614d2e3": {
+      "maxParticipants": 150,
+      "alcoholAllowed": false,
+      "excludedActivities": ["bouncy castles", "trampolines"],
+      "limitsDollars": [2000000],
+      "maxClassWithoutReview": null
+    },
+    "ff53722391cf562b22ad78aa": {
+      "activities": ["yoga class"],
+      "participants": 5,
+      "hours": 3,
+      "alcohol": "none",
+      "flags": []
+    }
+  }
+}
